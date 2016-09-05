@@ -53,9 +53,9 @@ def merge_sort(lst):
     if len(lst) < 2:
         return lst
 
-    mid = int(len(lst) / 2)
-    lst1 = merge_sort(lst[:mid])
-    lst2 = merge_sort(lst[mid:])
+    half_way = int(len(lst) / 2)
+    lst1 = merge_sort(lst[:half_way])
+    lst2 = merge_sort(lst[half_way:])
 
     return merge_lists(lst1, lst2)
 
